@@ -1,28 +1,32 @@
 version: '3'
 services:
   movies:
-    image: rahamshaik/moviespaytm:latest
+    image: areebahsan/moviesonpaytm:latest
+
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
-  train:
-    image: rahamshaik/trainpaytm:latest
+  trains:
+    image: areebahsan/trainsonpaytm:latest
+
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
-  dth:
-    image: rahamshaik/dthpaytm:latest
+ recharge:
+    image: areebahsan/rechargeonpaytm:latest
+
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
-  recharge:
-    image: rahamshaik/rechargepaytm:latest
+  billing:
+    image: areebahsan/billsonpaytm:latest
+
     ports:
       - "84:80"
     deploy:
