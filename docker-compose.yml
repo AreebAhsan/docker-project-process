@@ -24,7 +24,7 @@ services:
     deploy:
       replicas: 3
 
-  billing:
+  bills:
     image: areebahsan/billsonpaytm:latest
 
     ports:
